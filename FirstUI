@@ -1,0 +1,213 @@
+import 'package:flutter/material.dart';
+
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+
+  MyApp({
+   Key key,
+  }) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp( home : Scaffold(
+      backgroundColor: const Color(0xffffffff),
+      body: Stack(
+        children: <Widget>[
+          Transform.translate(
+            offset: Offset(0, -40),
+            child: Container(
+              width: 732.0,
+              height: 785.0,
+              decoration: BoxDecoration(
+                borderRadius:
+                    BorderRadius.all(Radius.elliptical(500, 200)),
+                color: const Color(0xff05074b),
+                border: Border.all(width: 1.0, color: const Color(0xff707070)),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(0, -150),
+            child: Container(
+              width: 747.0,
+              height: 827.0,
+              decoration: BoxDecoration(
+                borderRadius:
+                    BorderRadius.all(Radius.elliptical(500, 200)),
+                color: const Color(0xff086ccc),
+                border: Border.all(width: 1.0, color: const Color(0xff707070)),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(59.0, 81.0),
+            child:
+                // Adobe XD layer: 'ACU_Logo' (shape)
+                Container(
+              width: 300,
+              height: 140,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/logo.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(47.0, 353.0),
+            child:
+                // Adobe XD layer: 'graduation-hat' (shape)
+                Container(
+              width: 51.0,
+              height: 51.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(26.0),
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/id.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(127.0, 459.0),
+            child: Container(
+              width: 253.0,
+              height: 60.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30.0),
+                color: const Color(0xff000000),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(205.0, 597.0),
+            child: Container(
+              width: 96.0,
+              height: 31.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(13.0),
+                color: const Color(0xffcb2a2a),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0x29000000),
+                    offset: Offset(0, 20),
+                    blurRadius: 20,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(127.0, 349.0),
+            child: Container(
+              width: 253.0,
+              height: 60.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30.0),
+                color: const Color(0xff000000),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(59.0, 468.0),
+            child:
+                // Adobe XD layer: 'lock' (shape)
+                Container(
+              width: 41.0,
+              height: 41.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14.0),
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/pass.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(142.0, 476.0),
+            child: Text(
+              'Password',
+              style: TextStyle(
+                fontFamily: 'OCR A',
+                fontSize: 25,
+                color: const Color(0xffffffff),
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(135.0, 366.0),
+            child: Text(
+              'ID',
+              style: TextStyle(
+                fontFamily: 'OCR A',
+                fontSize: 25,
+                color: const Color(0xffffffff),
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(223.0, 602.0),
+            child: Text(
+              'Login',
+              style: TextStyle(
+                fontFamily: 'OCR A',
+                fontSize: 20,
+                color: const Color(0xffffffff),
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(90, 770),
+            child: Text(
+              'Follow us',
+              style: TextStyle(
+                fontFamily: 'OCR A',
+                fontSize: 25,
+                color: const Color(0xff080000),
+              ),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(220, 770),
+            child:
+                // Adobe XD layer: 'facebook' (shape)
+                Container(
+              width: 32.0,
+              height: 32.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/fb.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(280, 770),
+            child:
+                // Adobe XD layer: 'instagram' (shape)
+                Container(
+              width: 32.0,
+              height: 32.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage('assets/images/insta.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    )
+    );
+  }
+}
